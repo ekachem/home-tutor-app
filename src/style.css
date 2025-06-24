@@ -1,0 +1,76 @@
+/* Base setup */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Make app take full screen */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Main container */
+.app-container {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography and inputs */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.word-display {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+input[type="text"] {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+button {
+  font-size: 1.1rem;
+  padding: 0.6rem 1rem;
+  margin: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .word-display {
+    font-size: 1.6rem;
+  }
+
+  input[type="text"],
+  button {
+    font-size: 1rem;
+  }
+}
+

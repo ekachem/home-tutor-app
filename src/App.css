@@ -1,38 +1,110 @@
-.App {
+/* Base layout and full-screen background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url('background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Center content inside root */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Responsive app container */
+.app-container {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Title */
+h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  margin-bottom: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Topic dropdown */
+.selector {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Question display (stacked digits) */
+.math-display {
+  font-family: monospace;
+  font-size: 24px;
+  white-space: pre;
+  margin-bottom: 1rem;
+}
+
+/* Inputs and selects */
+input[type="number"],
+input,
+select {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border: 2px solid #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+  outline: none;
+}
+
+/* Buttons */
+button {
+  font-size: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  margin-top: 1rem;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #4CAF50;
   color: white;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Feedback text */
+.feedback {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  button,
+  input,
+  select {
+    font-size: 1rem;
   }
 }
+
