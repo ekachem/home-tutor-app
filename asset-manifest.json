@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/home-tutor-app/static/css/main.92027ec2.css",
-    "main.js": "/home-tutor-app/static/js/main.b1850019.js",
+    "main.js": "/home-tutor-app/static/js/main.310a0001.js",
     "static/js/453.04a54af1.chunk.js": "/home-tutor-app/static/js/453.04a54af1.chunk.js",
     "static/media/background.png": "/home-tutor-app/static/media/background.dc6f42585ee82c3e927c.png",
     "index.html": "/home-tutor-app/index.html",
     "main.92027ec2.css.map": "/home-tutor-app/static/css/main.92027ec2.css.map",
-    "main.b1850019.js.map": "/home-tutor-app/static/js/main.b1850019.js.map",
+    "main.310a0001.js.map": "/home-tutor-app/static/js/main.310a0001.js.map",
     "453.04a54af1.chunk.js.map": "/home-tutor-app/static/js/453.04a54af1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.92027ec2.css",
-    "static/js/main.b1850019.js"
+    "static/js/main.310a0001.js"
   ]
 }
